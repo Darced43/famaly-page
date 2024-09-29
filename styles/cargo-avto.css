@@ -1,0 +1,100 @@
+.cargo-avto__information-bottom{
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.cargo-avto__information-bottom-text{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 140%;
+    width: 660px;
+}
+
+.cargo-avto__information-bottom-info{
+    margin-top: 60px;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cargo-avto__information-bottom-info-item img{
+    width: 60px;
+    height: 60px;
+}
+
+.cargo-avto__information-bottom-info-item-text{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    margin-top: 15px;
+    color: rgba(66, 66, 74, 1);
+}
+
+@media (max-width: 1200px){
+    .cargo-avto__information-bottom{
+        padding-top: 80px;
+    }
+    .cargo-avto__information-bottom-text{
+        font-size: 30px;
+        width: 440px;
+    }
+    .cargo-avto__information-bottom-info{
+        margin-top: 40px;
+        gap: 40px;
+    }
+    .cargo-avto__information-bottom-info-item img{
+        width: 50px;
+        height: 50px;
+    }
+
+
+}
+
+@media (max-width: 900px){
+    .cargo-avto__information-bottom{
+        padding-top: 60px;
+    }
+    .cargo-avto__information-bottom-text{
+        font-size: 24px;
+        width: 330px;
+    }
+    .cargo-avto__information-bottom-info{
+        margin-top: 30px;
+        gap: 30px;
+    }
+    .cargo-avto__information-bottom-info-item img{
+        width: 40px;
+        height: 40px;
+    }
+    .cargo-avto__information-bottom-info-item-text{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px){
+    .cargo-avto__information-bottom-info{
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cargo-avto__information-bottom{
+        padding-top: 40px;
+    }
+    .cargo-avto__information-bottom-text{
+        font-size: 18px;
+        gap: 10px;
+        width: 190px;
+    }
+    .cargo-avto__information-bottom-info-item img{
+        width: 30px;
+        height: 30px;
+    }
+    .cargo-avto__information-bottom-info-item-text{
+        margin-top: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

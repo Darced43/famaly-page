@@ -1,0 +1,183 @@
+.cargo-comercial{
+    margin-top: 100px;
+}
+
+.cargo-comercial__title{
+    line-height: 120%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    color: rgba(66, 66, 74, 1);
+}
+
+.cargo-comercial__description{
+    line-height: 160%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(66, 66, 74, 1);
+    margin-top: 20px;
+}
+
+.cargo-comercial__info{
+    margin-top: 60px;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cargo-comercial__info-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.cargo-comercial__info-item-img{
+    width: 60px;
+    height: 60px;
+}
+
+.cargo-comercial__info-item-title{
+    line-height: 160%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(66, 66, 74, 1);
+    margin-top: 15px;
+}
+
+.cargo-comercial__info-item-text{
+    line-height: 160%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(66, 66, 74, 1);
+    margin-top: 15px;
+}
+.cargo-comercial__info-item-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.cargo-comercial__btn-show{
+    display: none;    
+}
+
+@media(max-width:1200px){
+    .cargo-comercial{
+        margin-top: 80px;
+    }
+    .cargo-comercial__title{
+        font-size: 40px;
+    }
+    .cargo-comercial__info{
+        margin-top: 40px;
+        gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .cargo-comercial__info-item-img{
+        width: 50px;
+        height: 50px;
+    }
+    .cargo-comercial__info-item-title{
+        margin-top: 10px;
+    }
+    .cargo-comercial__info-item-text{
+        margin-top: 10px;   
+    }
+}
+@media(max-width:900px){
+    .cargo-comercial{
+        margin-top: 60px;
+    }
+    .cargo-comercial__title{
+        font-size: 34px;
+    }
+    .cargo-comercial__description{
+        font-size: 20px;
+    }
+    .cargo-comercial__info{
+        margin-top: 30px;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cargo-comercial__info-item-img{
+        width: 40px;
+        height: 40px;
+    }
+    .cargo-comercial__info-item-title{
+        font-size: 20px;
+    }
+    .cargo-comercial__info-item-text{
+        font-size: 16px;
+    }
+}
+@media(max-width:767px){
+    .cargo-comercial{
+        margin-top: 40px;
+    }
+    .cargo-comercial__title{
+        font-size: 22px;
+    }
+
+    .cargo-comercial__description{
+        font-size: 18px;
+    }
+
+    .cargo-comercial__info{
+        margin-top: 20px;
+        gap: 0;
+        grid-template-columns: 1fr ;
+    }
+    .cargo-comercial__info-item-img{
+        width: 30px;
+        height: 30px;
+    }
+    .cargo-comercial__info-item-title{
+        font-size: 18px;
+        margin-top: 0;
+    }
+    .cargo-comercial__info-item-wrap{
+        flex-direction: row;
+        gap: 10px;
+    }
+    .cargo-comercial__btn-show{
+        line-height: 140%;
+        width: 100%;
+        background: white;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Gilroy', sans-serif;
+        text-align: center;
+        padding: 18px 0;
+        border: 1px solid rgba(237, 237, 237, 1);
+        border-radius: 10px;
+        color: rgba(66, 66, 74, 1);
+        transition: color 0.4s ease;
+    }
+
+    .cargo-comercial__info-item {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: max-height 0.5s ease-out, opacity 0.5s ease-out, visibility 0.5s ease-out;
+    }
+
+    .cargo-comercial__info-item:nth-child(1),
+    .cargo-comercial__info-item:nth-child(2) {
+        max-height: 200px;
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: 20px;
+    }
+
+    /* Когда активны все блоки */
+    .cargo-comercial__info-item.show {
+        max-height: 100px; /* Устанавливаем высоту для полностью видимого элемента */
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: 20px;
+    }
+    
+}

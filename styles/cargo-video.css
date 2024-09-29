@@ -1,0 +1,140 @@
+.cargo-video {
+    margin-top: 100px;
+}
+
+.cargo-video__wrap {
+    position: relative;
+    width: 1140px;
+    height: 600px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.cargo-video__cases-poster-img{
+    width: 100%;
+    height: 100%;
+}
+
+.cargo-video__play {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cargo-video__track {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh; /* Полный экран */
+    display: none; /* Изначально скрыто */
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Поверх всего */
+}
+
+.fancybox__content-video {
+    position: relative;
+    z-index: 200;
+    width: 960px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cargo-video__backdrop {
+    background: rgba(24, 24, 27, 0.98);
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.carousel__button.is-close {
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 300;
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.carousel__button.is-close svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.cargo-video__fancybox-iframe{
+    width: 960px;
+    height: 600px;
+}
+@media (max-width: 1400px){
+    .cargo-video__wrap{
+        width: 760px;
+        height: 400px;
+    }
+}
+@media (max-width: 1200px){
+    .cargo-video{
+        margin-top: 80px;
+    }
+    .cargo-video__fancybox-iframe{
+        width: 760px;
+        height: 500px;
+    }
+    .carousel__button.is-close {
+        right: 40px;
+    }
+
+}
+@media (max-width: 900px){
+    .cargo-video{
+        margin-top: 60px;
+    }
+    .cargo-video__wrap{
+        width: 570px;
+        height: 300px;
+    }
+    .cargo-video__play{
+        width: 80px;
+        height: 80px;
+    }
+    .cargo-video__fancybox-iframe{
+        width: 460px;
+        height: 300px;
+    }
+    .carousel__button.is-close {
+        right: 5%;
+        top: 65px;
+    }
+}
+@media (max-width: 767px){
+    .cargo-video{
+        margin-top: 40px;
+    }
+    .cargo-video__wrap{
+        width: 290px;
+        height: 150px;
+    }
+    .cargo-video__play{
+        width: 40px;
+        height: 40px;
+    }
+    .cargo-video__fancybox-iframe{
+        width: 320px;
+        height: 180px;
+    }
+    .carousel__button.is-close {
+        right: clamp(10px, 5%, 100px);
+        top: 130px;
+    }
+}

@@ -1,0 +1,25 @@
+.cargo{
+    overflow: hidden;
+}
+
+.cargo-double-plus{
+    margin-top: 100px;
+}
+
+@media(max-width:1200px){
+    .cargo-double-plus{
+        margin-top: 80px;
+    }
+}
+
+@media(max-width:900px){
+    .cargo-double-plus{
+        margin-top: 60px;
+    }
+}
+
+@media(max-width:767px){
+    .cargo-double-plus{
+        margin-top: 40px;
+    }
+}

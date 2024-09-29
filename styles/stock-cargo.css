@@ -1,0 +1,373 @@
+.commercial-stock-cargo{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.commercial-stock-cargo__container-wrap{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.commercial-stock-cargo__container{
+    background: rgba(38, 38, 44, 1);
+}
+
+.commercial-stock-cargo__title{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 120%;
+    color: white;
+}
+
+.commercial-stock-cargo__dop{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: white;
+    margin-top: 40px;
+}
+
+.commercial-stock-cargo__dop-item{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.commercial-stock-cargo__dop-item img{
+    width: 18px;
+    height: 18px;
+}
+
+.commercial-stock-cargo__dop-item:first-child{
+    margin-top: 20px;
+}
+
+.commercial-stock-cargo__dop-item span{
+    margin-left: 10px;
+}
+
+.commercial-stock-cargo__info{
+    margin-top: 20px;
+    line-height: 160%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(252, 166, 40, 1);
+}
+
+.commercial-stock-cargo__details{
+    margin-top: 40px;
+    display: flex;
+}
+
+.commercial-stock-cargo__details-btn{
+    line-height: 140%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    padding: 22px 40px;
+    background: #DA412C;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    margin-right: 30px;
+    transition: background 0.4s ease;
+    cursor: pointer;
+}
+
+.commercial-stock-cargo__details-btn:hover{
+    background: #e75945;
+}
+
+
+.commercial-stock-cargo__details-info{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.commercial-stock-cargo__details-info-text{
+    line-height: 150%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(119, 119, 119, 1);
+    text-align: start;
+}
+
+.commercial-stock-cargo__details-info-link{
+    margin-top: 5px;
+    line-height: 150%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    text-align: start;
+}
+
+.commercial-stock-cargo__img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    width: calc(1050/1920 * 100vw);
+    height: calc((1050/1920 * 100vw) * 590/1050);
+}
+.commercial-stock-cargo__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.commercial-stock-cargo__dop-info{
+    margin-top: 40px;
+}
+
+.commercial-stock-cargo__dop-info-title{
+    line-height: 160%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #777777;
+}
+
+.commercial-stock-cargo__dop-info-items{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.commercial-stock-cargo__dop-info-item{
+    background: rgba(252, 166, 40, 1);
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.commercial-stock-cargo__dop-info-item-percent{
+    line-height: 140%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.commercial-stock-cargo__dop-info-item-text{
+    line-height: 150%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 1550px) {
+
+    .commercial-stock-cargo{
+        margin-top: 80px;
+    }
+    .commercial-stock-cargo__title{
+        font-size: 40px;
+    }
+
+    .commercial-stock-cargo__container-wrap{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .commercial-stock-cargo__dop{
+        margin-top: 30px;
+    }
+
+    .commercial-stock-cargo__details{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1200px){
+    .commercial-stock-cargo__dop-info{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1024px){
+    .commercial-stock-cargo{
+        overflow: hidden;
+        padding-bottom: 80px;
+    }
+    .commercial-stock-cargo__img{
+        width: 852px;
+        height: 478px;
+        bottom: 22px;
+        right: -291px;
+    }
+
+}
+
+@media (max-width: 1023px){
+    .commercial-stock-cargo__img{
+        width: 612px;
+        height: 344px;
+        right: -221px;
+    }
+}
+
+@media (max-width: 900px){
+    .commercial-stock-cargo{
+        margin-top: 60px;
+    }
+
+    .commercial-stock-cargo__container-wrap{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .commercial-stock-cargo__title{
+        font-size: 34px;
+    }
+
+    .commercial-stock-cargo__img{
+        width: 612px;
+        height: 344px;
+        right: -231px;
+    }
+    .commercial-stock-cargo__dop {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .commercial-stock-cargo__dop-item{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    .commercial-stock-cargo__info{
+        font-size: 16px;
+    }
+
+    .commercial-stock-cargo__details{
+        margin-top: 20px;
+    }
+
+    .commercial-stock-cargo__details-btn{
+        font-size: 14px;
+        padding: 18px 30px;
+    }
+
+    .commercial-stock-cargo__details-info{
+        padding: 3px 0;
+    }
+    .commercial-stock-cargo__dop-info{
+        margin-top: 20px;
+    }
+    .commercial-stock-cargo__dop-info-title{
+        font-size: 16px;
+    }
+    .commercial-stock-cargo__dop-info-item-percent{
+        font-size: 24px;
+    }
+    .commercial-stock-cargo__info{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px){
+    .commercial-stock-cargo{
+        padding-bottom: 40px;
+        margin-top: 40px;
+    }
+    .commercial-stock-cargo__container-wrap{
+        padding-top: 30px;
+        padding-bottom: 68px;
+    }
+    .commercial-stock-cargo__title{
+        font-size: 22px;
+        padding-bottom: 238px;
+    }
+    .commercial-stock-cargo__dop{
+        margin-top: 10px;
+    }
+    .commercial-stock-cargo__dop-item:first-child {
+        margin-top: 10px;
+    }
+    .commercial-stock-cargo__dop-item{
+        margin-top: 10px;
+    }
+
+    .commercial-stock-cargo__img{
+        width: 362px;
+        height: 217px;
+        right: -61px;
+        bottom: 5px;
+        top: 119px;
+    }
+
+    .commercial-stock-cargo__info{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 400;
+    }
+
+    .commercial-stock-cargo__dop-info-items {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr); 
+        margin-top: 10px;
+    }
+    
+    .commercial-stock-cargo__dop-info-items > *:nth-child(1) {
+        grid-column: 1 / 3; 
+        grid-row: 1;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .commercial-stock-cargo__dop-info-items > *:nth-child(2) {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+    
+    .commercial-stock-cargo__dop-info-items > *:nth-child(3) {
+        grid-column: 2 / 3;
+        grid-row: 2;
+    }
+    .commercial-stock-cargo__dop-info-item{
+        width: 100%;
+    }
+
+    .commercial-stock-cargo__details{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .commercial-stock-cargo__details-info{
+        margin-top: 20px;
+        align-items: center;
+        padding: 0;
+    }
+
+    .commercial-stock-cargo__details-btn{
+        width: 100%;
+    }
+    .commercial-stock-cargo__dop-info{
+        margin-top: 0;
+    }
+    .commercial-stock-cargo__dop-info-item-percent{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,218 @@
+
+
+.cargo-motor{
+    margin-top: 100px;
+    position: relative;
+    padding-bottom: 173px;
+}
+
+.cargo-motor__title{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 120%;
+    color: #42424A;
+}
+
+.cargo-motor__description{
+    margin-top: 40px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 160%;
+    color: #42424A;
+    max-width: 660px;
+}
+
+.cargo-motor__info{
+    margin-top: 66px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cargo-motor__info-item{
+    display: flex;
+    align-items: center;
+}
+
+.cargo-motor__info-item-img{
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.cargo-motor__info-item-text{
+    line-height: 160%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(66, 66, 74, 1);
+}
+
+.cargo-motor__btn{
+    margin-top: 60px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    background: rgba(218, 65, 44, 1);
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    padding: 22px 152px;
+    color: white;
+    cursor: pointer;
+    transition: background .4s ease;
+}
+
+.cargo-motor__btn:hover{
+    background: #e75945;
+}
+
+.cargo-motor__image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 930px;
+    height: 930px;
+    z-index: -1;
+}
+.cargo-motor__image-mob{
+    display: none;
+}
+
+@media (max-width: 1600px){
+    .cargo-motor__image{
+        width: calc(930/1920 * 100vw);
+        height: calc((930/1920 * 100vw) * 930/930);
+        top: 118px;
+    }
+}
+
+@media (max-width: 1200px){
+    .cargo-motor{
+        margin-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .cargo-motor__title{
+        font-size: 40px;
+    }
+
+    .cargo-motor__description{
+        font-size: 24px;
+        max-width: 440px;
+    }
+    .cargo-motor__info{
+        margin-top: 40px;
+        gap: 15px;
+    }
+    .cargo-motor__info-item-img{
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+    .cargo-motor__btn{
+        margin-top: 40px;
+        padding: 22px 42px;
+    }
+    .cargo-motor__image{
+        top: -5px;
+    }
+    .cargo-motor__info{
+        width: 440px;
+    }
+
+}
+
+@media (max-width: 900px){
+    .cargo-motor{
+        margin-top: 60px;
+        padding-bottom: 60px;
+
+    }
+
+    .cargo-motor__title{
+        font-size: 34px;
+    }
+    .cargo-motor__description{
+        font-size: 20px;
+        margin-top: 20px;
+        max-width: 331px;
+    }
+    .cargo-motor__info{
+        margin-top: 20px;
+        gap: 10px;
+        width: 312px;
+    }
+
+    .cargo-motor__info-item-img{
+        width: 36px;
+        height: 36px;
+    }
+
+    .cargo-motor__btn{
+        margin-top: 20px;
+        padding: 22px 23px;
+        font-size: 24px;
+    }
+    .cargo-motor__image{
+        width: 369px;
+        height: 369px;
+    }
+    .cargo-motor__info-item-text{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px){
+    .cargo-motor{
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .cargo-motor__wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .cargo-motor__title{
+        font-size: 22px;
+        order: 1;
+    }
+    .cargo-motor__description{
+        font-size: 18px;
+        max-width: 100%;
+        order: 2;
+        padding-bottom: 340px;
+    }
+    .cargo-motor__info{
+        margin-top: 0;
+        order: 4;
+        width: 100%;
+    }
+    .cargo-motor__info-item-img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .cargo-motor__btn{
+        padding: 22px 38px;
+        font-size: 18px;
+        order: 5;
+    }
+    .cargo-motor__image-mob{
+        display: block;
+        position: absolute;
+        width: 290px;
+        height: auto;
+        top: 240px;
+        right: 0;
+        order: 3;
+    }
+    .cargo-motor__image{
+        display: none;
+    }
+    .cargo-motor__info-item-text{
+        font-size: 18px;
+    }
+}

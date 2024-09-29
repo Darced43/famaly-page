@@ -1,0 +1,113 @@
+
+
+.cargo-transform{
+    margin-top: 100px;
+}
+
+.cargo-transform__title{
+    line-height: 120%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    color: #42424A;
+}
+
+.cargo-transform__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.cargo-transform__info-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.cargo-transform__info-item-title{
+    display: flex;
+    align-items: center;
+}
+
+.cargo-transform__info-item-img{
+    width: 60px;
+    height: 60px;
+}
+
+.cargo-transform__info-item-title-text{
+    line-height: 160%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(66, 66, 74, 1);
+    margin-left: 20px;
+}
+
+.cargo-transform__info-item-text{
+    line-height: 160%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(66, 66, 74, 1);
+    margin-top: 10px;
+}
+
+@media(max-width: 1200px){
+    .cargo-transform{
+        margin-top: 80px;
+    }
+    .cargo-transform__title{
+        font-size: 40px;
+    }
+    .cargo-transform__info{
+        margin-top: 30px;
+        gap: 40px;
+    }
+    .cargo-transform__info-item-img{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+@media(max-width: 900px){
+    .cargo-transform{
+        margin-top: 60px;
+    }
+    .cargo-transform__title{
+        font-size: 34px;
+    }
+    .cargo-transform__info{
+        gap: 30px;
+    }
+    .cargo-transform__info-item-img{
+        width: 40px;
+        height: 40px;
+    }
+    .cargo-transform__info-item-title-text{
+        font-size: 20px;
+    }
+    .cargo-transform__info-item-text{
+        font-size: 16px;
+    }
+}
+@media(max-width: 767px){
+    .cargo-transform{
+        margin-top: 40px;
+    }
+    .cargo-transform__title{
+        font-size: 22px;
+    }
+    .cargo-transform__info{
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .cargo-transform__info-item-img{
+        width: 30px;
+        height: 30px;
+    }
+    .cargo-transform__info-item-title-text{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,26 @@
+@import url('./fonts/Gilroy/stylesheet.css');
+@import url('./fonts/Roboto/stylesheet.css');
+@import url('./styles/reset.css');
+@import url('./styles/commercial-styles.css');
+@import url('styles/cargo.css');
+@import url('./styles/breadcrumbs.css');
+@import url('./styles/stock.css');
+@import url('./styles/stock-cargo.css');
+@import url('./styles/cargo-presentation.css');
+@import url('./styles/cargo-avto.css');
+@import url('./styles/cargo-motor.css');
+@import url('./styles/cargo-call.css');
+@import url('./styles/cargo-comercial.css');
+@import url('./styles/cargo-advantages.css');
+@import url('./styles/cargo-transform.css');
+@import url('./styles/cargo-plus.css');
+@import url('./styles/cargo-test.css');
+@import url('./styles/cargo-service.css');
+@import url('./styles/commercial-chose.css');
+@import url('./styles/cargo-video.css');
+@import url('./styles/cargo-stock.css');
+/*@import url('./styles/settings.css');*/
+
+.text-yelow{
+    color: rgba(252, 166, 40, 1);
+}
